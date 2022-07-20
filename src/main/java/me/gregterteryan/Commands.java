@@ -135,7 +135,7 @@ public class Commands extends ListenerAdapter{
     }
     public void save(String serverName) {
         try {
-            FileOutputStream fileOut = new FileOutputStream("C:\\Users\\terte\\Coding Projects\\IdeaProjects\\discord-server-profiler-bot\\" + serverName + ".ser");
+            FileOutputStream fileOut = new FileOutputStream(serverName + ".ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(server);
             out.close();
@@ -148,7 +148,7 @@ public class Commands extends ListenerAdapter{
     public void load(String serverName) {
         server = null;
         try {
-            FileInputStream fileIn = new FileInputStream("C:\\Users\\terte\\Coding Projects\\IdeaProjects\\discord-server-profiler-bot\\" + serverName + ".ser");
+            FileInputStream fileIn = new FileInputStream(serverName + ".ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             server = (Server) in.readObject();
             in.close();
