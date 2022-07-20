@@ -35,15 +35,15 @@ public class Commands extends ListenerAdapter{
             event.getChannel().sendMessage("that violence breeds violence").queue();
             event.getChannel().sendMessage("but in the end, it has to be this way.").queue();
         }
-        else if (args[0].equalsIgnoreCase(GregTest.prefix + "help")) {
+        else if (args[0].equalsIgnoreCase(Main.prefix + "help")) {
             event.getAuthor().openPrivateChannel().complete()
                     .sendMessage("Here are the commands: \n" +
-                    GregTest.prefix + "profile: \n\t by itself: shows your profile\n\tnew: makes a new profile for you\n\tsetName: sets your name"
+                    Main.prefix + "profile: \n\t by itself: shows your profile\n\tnew: makes a new profile for you\n\tsetName: sets your name"
                     + "\n\tsetAge: sets your age\n\tsetStatus: sets your status\n\tsetAboutMe: sets your about me\n\tsetPFP: sets your profile picture (url)"
-                    + "\n" + GregTest.prefix + "seeProfile (user's @ mention): shows the user's profile"
+                    + "\n" + Main.prefix + "seeProfile (user's @ mention): shows the user's profile"
                     + "\nThis gif: https://tenor.com/view/metal-gear-raiden-senator-armstrong-moneyintr-gif-15988527").queue();
         }
-        else if (args[0].equalsIgnoreCase(GregTest.prefix + "profile")) {
+        else if (args[0].equalsIgnoreCase(Main .prefix + "profile")) {
             if (args.length > 1) {
                 if (args[1].equalsIgnoreCase("new")) {
                     if (findUserIndex(serverName) > -1) {
