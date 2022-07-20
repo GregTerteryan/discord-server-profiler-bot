@@ -24,7 +24,7 @@ public class Main extends ListenerAdapter {
     public static String prefix = "^";
     public static void main(String[] args) throws LoginException {
         try {
-            bot = JDABuilder.createDefault("OTYxMTA2MDI4NjY0MDg2NTI4.Yk0JvQ.XavYMz_1mgkPhUbiLwGzNqplM5Q")
+            bot = JDABuilder.createDefault(System.getenv("TOKEN"))
                     .setActivity(Activity.playing("with the creator's sanity"))
                     .addEventListeners(new Commands())
                     .build();
