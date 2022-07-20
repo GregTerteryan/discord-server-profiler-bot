@@ -6,7 +6,6 @@
 
     <groupId>GTEternity</groupId>
     <artifactId>discord-server-profiler-bot</artifactId>
-         <url>https://jcenter.bintray.com/</url>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -47,6 +46,7 @@
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
+            <url>https://jcenter.bintray.com/</url>
             <version>5.0.0-alpha.8</version>
         </dependency>
     </dependencies>
