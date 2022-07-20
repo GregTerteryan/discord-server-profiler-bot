@@ -111,7 +111,7 @@ public class Commands extends ListenerAdapter{
                             server.users.get(findUserIndex(serverName)).setAge(index);
                             save(file);
                         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-                            event.getChannel().sendMessage("Input an integer number after " + GregTest.prefix + "setAge.").queue();
+                            event.getChannel().sendMessage("Input an integer number after " + Main.prefix + "setAge.").queue();
                         }
                     }
                 }
@@ -121,11 +121,11 @@ public class Commands extends ListenerAdapter{
                     event.getChannel().sendMessage(server.users.get(findUserIndex(serverName)).toString()).queue();
                 }
                 else {
-                    event.getChannel().sendMessage("Please make a profile with " + GregTest.prefix + "profile new").queue();
+                    event.getChannel().sendMessage("Please make a profile with " + Main.prefix + "profile new").queue();
                 }
             }
         }
-        else if (args[0].equalsIgnoreCase(GregTest.prefix + "seeProfile")) {
+        else if (args[0].equalsIgnoreCase(Main.prefix + "seeProfile")) {
             if (findUserIndex(args[1]) > -1) {
                 event.getChannel().sendMessage(server.users.get(findUserIndex(args[1])).toString()).queue();
             }
