@@ -12,7 +12,10 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
-
+    
+    <name>discord-server-profile-bot</name>
+    <url>https://github.com/GTEternity/discord-server-profiler-bot</url>
+    
     <repositories>
         <repository>
             <id>jitpack.io</id>
