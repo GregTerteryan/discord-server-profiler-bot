@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class GregTest extends ListenerAdapter {
+public class Main extends ListenerAdapter {
     public static JDA bot;
     public static String prefix = "^";
     public static void main(String[] args) throws LoginException {
